@@ -8,11 +8,11 @@ Log in to Mailtrap and select Laravel 9+ as your integration option.
 
 Update the following fields in the .env file with the credentials provided by Mailtrap:
 
-MAIL_MAILER=<your_mailtrap_mailer>
-MAIL_HOST=<your_mailtrap_host>
-MAIL_PORT=2525
-MAIL_USERNAME=<your_mailtrap_username>
-MAIL_PASSWORD=<your_mailtrap_password>
+MAIL_MAILER=<your_mailtrap_mailer> <br>
+MAIL_HOST=<your_mailtrap_host> <br>
+MAIL_PORT=2525 <br>
+MAIL_USERNAME=<your_mailtrap_username> <br>
+MAIL_PASSWORD=<your_mailtrap_password> <br>
 
 Save the .env file and test the email functionality in the application. You can then access certain features and add expenses, and check our system.
 
