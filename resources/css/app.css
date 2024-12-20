@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+@layer components {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="url"], textarea {
+        @apply block w-full rounded-md border-0 p-2 text-pink-900 shadow-sm ring-1 ring-inset ring-pink-300 placeholder:text-pink-500 focus:ring-2 focus:ring-inset focus:ring-pink-500 sm:text-sm bg-white;
+    }
+    label {
+        @apply block text-sm font-medium leading-6 text-pink-900 first-letter:capitalize;
+    }
+    header {
+        @apply bg-pink-800 shadow-md;
+    }
+    nav {
+        @apply p-5 max-w-screen-lg mx-auto flex items-center justify-between;
+    }
+    main {
+        @apply max-w-screen-lg mx-auto;
+    }
+    .primary-btn {
+        @apply flex w-full justify-center rounded-md bg-pink-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-pink-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 disabled:bg-pink-400 disabled:cursor-wait;
+    }
+    .text-link {
+        @apply font-semibold text-pink-500 hover:text-pink-600;
+    }
+    .nav-link {
+        @apply text-pink-200 hover:bg-pink-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium;
+    }
+    .title {
+        @apply my-6 text-center text-3xl font-bold leading-9 text-pink-900;
+    }
+    .error {
+        @apply text-xs text-red-500 mt-1;
+    }
+    table {
+        @apply w-full text-sm text-left rounded-md shadow-lg overflow-hidden mb-6 table-auto bg-white;
+    }
+    thead {
+        @apply text-xs uppercase font-medium border-b border-pink-100 text-pink-600;
+    }
+    tbody tr {
+        @apply hover:bg-pink-100 w-full p-0;
+    }
+    th {
+        @apply px-6 py-4;
+    }
+    td {
+        @apply px-6 py-4 border-b border-pink-100;
+    }
+    .avatar {
+        @apply w-8 h-8 rounded-full overflow-hidden object-center object-cover;
+    }
+    .round-btn {
+        @apply w-8 h-8 overflow-auto rounded-full bg-pink-100 focus:outline-none focus:ring-1 focus:ring-pink-100 focus:ring-offset-2 focus:ring-offset-pink-800;
+    }
+    .card {
+        @apply bg-white p-6 rounded-lg shadow-md border border-pink-200;
+    }
+    .btn {
+        @apply bg-pink-500 text-white py-2 px-4 rounded-md font-medium hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-offset-2;
+    }
+}
