@@ -1,5 +1,21 @@
-## Ezzaour System for Algorithms and Complexity Final Project nyyipeee
+## System for Algorithms and Complexity Final Project
 ## SPENDZILLA -- No more "I swear I had more money yesterday!"
+Mailtrap was utilized for testing and debugging email functionality in the web application. No API has been implemented yet.
+
+In checking SPENDZILLA and verify email functionality, please follow these steps:
+
+Log in to Mailtrap and select Laravel 9+ as your integration option.
+
+Update the following fields in the .env file with the credentials provided by Mailtrap:
+
+MAIL_MAILER=<your_mailtrap_mailer>
+MAIL_HOST=<your_mailtrap_host>
+MAIL_PORT=2525
+MAIL_USERNAME=<your_mailtrap_username>
+MAIL_PASSWORD=<your_mailtrap_password>
+
+Save the .env file and test the email functionality in the application. You can then access certain features and add expenses, and check our system.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
